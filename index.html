@@ -515,21 +515,21 @@
         <script>
 
             // Uber
-        const uberPickupAddress = "1 Rue de Rivoli, 75001 Paris, France";
+        const uberPickupAddress = "80 Rte du Laitelet, 73550 Les Allues, France";
         const uberLink = document.getElementById("uberLink");
         uberLink.href = `https://m.uber.com/ul/?action=setPickup&pickup[formatted_address]=${encodeURIComponent(uberPickupAddress)}`;
 
         // BlaBlaCar
 
-        const blablacarDepartureCity = "Paris";
-        const blablacarArrivalCity = "Lyon";
+        const blablacarDepartureCity = "Meribel-mottaret";
+        const blablacarArrivalCity = "";
         const blablacarLink = document.getElementById("bbcLink");
         blablacarLink.href = `https://www.blablacar.fr/ride-sharing/${encodeURIComponent(blablacarDepartureCity)}-${encodeURIComponent(blablacarArrivalCity)}`;
 
 
         document.addEventListener('DOMContentLoaded', function() {
     // SNCF
-    const sncfDepartureStation = "Paris Gare de Lyon";
+    const sncfDepartureStation = "Gare de Moutiers";
     const sncfLink = document.getElementById("sncfLink");
     
     // Construire l'URL avec le paramètre encodé
