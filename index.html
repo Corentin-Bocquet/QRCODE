@@ -231,7 +231,7 @@
                         <div class="skills__data" id="title3">
                             <div class="skills__names">
                                 <i class='bx bxs-taxi skills__icon' id="icon3"></i>
-                                <span class="skills__name" id="subtitle3">Planifier un trajet UBER</span>
+                                <span class="skills__name" id="subtitle3">Planifier un trajet Uber</span>
                             </div>
                             <div class="skills__bar skills__js" id="bar3">
                                 
@@ -241,6 +241,22 @@
                             </div>
                         </div>
                         </a>
+
+                        <a href="" id="bbcLink">
+                            <div class="skills__data" id="title4">
+                                <div class="skills__names">
+                                    <i class='bx bxs-car-garage skills__icon' id="icon4"></i>
+                                    <span class="skills__name" id="subtitle4">Planifier un trajet BlaBlaCar</span>
+                                </div>
+                                <div class="skills__bar skills__js" id="bar4">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage"> ✔ </span>
+                                </div>
+                            </div>
+                            </a>
+
 
                        
                     </div>
@@ -364,6 +380,14 @@
         const uberLink = document.getElementById("uberLink");
         uberLink.href = `https://m.uber.com/ul/?action=setPickup&pickup[formatted_address]=${encodeURIComponent(uberPickupAddress)}`;
 
+        // BlaBlaCar
+
+        const blablacarDepartureCity = "Paris";
+        const blablacarArrivalCity = "Lyon";
+        const blablacarLink = document.getElementById("bbcLink");
+        blablacarLink.href = `https://www.blablacar.fr/ride-sharing/${encodeURIComponent(blablacarDepartureCity)}-${encodeURIComponent(blablacarArrivalCity)}`;
+
+
         document.addEventListener('DOMContentLoaded', function() {
     // SNCF
     const sncfDepartureStation = "Paris Gare de Lyon";
@@ -448,7 +472,7 @@
                 const icon = document.getElementById('icon4'); 
 
                 span.addEventListener('mouseover', function(){
-                    sub.textContent = 'CAGR/PER/ROE/ROIC/Margin/Liquidity/Yield';
+                    sub.textContent = 'Réservez dès Maintenant';
                     bar.style.backgroundColor = "#01B708";
                     icon.style.color = "#01B708";
                 });
