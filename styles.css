@@ -333,6 +333,7 @@ img {
 .skills__names {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .skills__bar {
