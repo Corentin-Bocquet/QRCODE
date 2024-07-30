@@ -578,9 +578,14 @@ img {
   .about__container {
     padding-top: 2rem;
   }
+  .about__img0 img {
+    width: 300px;
+  }
+
   .about__img img {
     width: 300px;
   }
+
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
