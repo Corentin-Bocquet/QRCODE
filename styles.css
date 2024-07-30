@@ -278,6 +278,17 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.about__img0 {
+    justify-self: center;
+   
+  }
+  
+  .about__img0 img {
+    width: 300px;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+  }
+
 .about__img {
   justify-self: center;
  
