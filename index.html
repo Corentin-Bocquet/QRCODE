@@ -1,15 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTICE</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">NOTICE</h1>
-        <img class="centered-image" src="serrure.jpg" alt="Serrure">
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <title>Le Grand Dou</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Le Grand Dou</a>     <!------------->
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                        <li class="nav__item"><a href="#activites" class="nav__link">Activités</a></li>
+                        <li class="nav__item"><a href="#randonnees" class="nav__link">Randonnées</a></li>
+                        <li class="nav__item"><a href="#transports" class="nav__link">Mes Transports</a></li>
+                        <li class="nav__item"><a href="#notice" class="nav__link">Notice</a></li>
+                        <li class="nav__item"><a href="#commerces" class="nav__link">Commerces</a></li>
+                        <li class="nav__item"><a href="#photos" class="nav__link">Photos</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 style="font-size:46px;" class="home__title">Bienvenue dans notre<br><span class="home__title-color">Air BNB</span><br>Le Grand Dou</h1>
+
+                    <a href="mailto:bocquet.daniel@free.fr" class="button">Nous Contacter</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-airbnb'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image id="imgchalet" class="home__blob-img" x="20" y="20"  xlink:href="chalet2.png">
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ACTIVITES =====-->
+            <section class="about section " id="activites">
+                <h2 class="section-title">Activités</h2>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img id="imgact1" src="ski1.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 id="titact1" class="about__subtitle">SKI & SNOWBOARD</h2>
+                        <p class="about__text">
+                            <ul class="points">
+                                <li id="li1act1">International experience in Greece</li>
+                                <li id="li2act1"><b>Gestion de maronniers</b> et de
+                                    <b>plannings éditoriaux</b>
+                                    </li>
+                                <li id="li3act1"><b>Rédaction</b> communiqués de presse </li>
+                        </p>
+                    </div> 
+            </section> 
+            
+            <section class="about section " id="">
+                
+
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 id="titact2" class="about__subtitle">Luges</h2>
+                        <p class="about__text">
+                            <ul class="points">
+                                <li id="li1act2"><b>Logistics</b> and <b>Supply Chain</b>
+                                    Department of Amiens University
+                                    Hospital</li>
+                                <li id="li2act2"><b>Création</b> de tableaux Excel, publipostage pour les directeurs, flyers, fiches
+                                    (diptyque, triptyque), livrets, affiches, publications pour les réseaux sociaux
+                                    
+                                    </li>
+                                <li id="li3act2"><b>Rédaction</b> de communiqués de presse, mails presse, actualités </li>
+                                
+                            </ul>
+                        </p>
+                    </div> 
+                    
+                    <div class="about__img">
+                        <img id="imgact2" src="luge1.jpeg" alt="">
+                    </div>
+                </div>
+            </section>            
+            
+            <section class="about section " id="">
+                
+
+                <div class="about__container bd-grid">
+
+                    <div class="about__img">
+                        <img id="imgact3" src="artifice1.jpeg" alt="">
+                    </div>
+                                        
+                    <div>
+                        <h2 id="titact3" class="about__subtitle">Feux d'Artifices</h2>
+                        <p class="about__text">
+                            <ul class="points">
+                                <li id="li1act3"><b>Logistics</b> and <b>Supply Chain</b>
+                                    Department of Amiens University
+                                    Hospital</li>
+                                <li id="li2act3"><b>Création</b> de tableaux Excel, publipostage pour les directeurs, flyers, fiches
+                                    (diptyque, triptyque), livrets, affiches, publications pour les réseaux sociaux
+                                    
+                                    </li>
+                                <li id="li3act3"><b>Rédaction</b> de communiqués de presse, mails presse, actualités </li>
+                                <li id="li4act3"><b>Photographies</b> en bloc opératoire lors d'une opération chirurgicale </li>
+                            </ul>
+                        </p>
+                    </div>                                     
+                </div>
+            </section>
+             
+            <section class="about section " id="">
+                
+
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 id="titact4" class="about__subtitle">Descente Aux Flambeaux</h2>
+                        <p class="about__text">
+                            <ul class="points">
+                                <li id="li1act4"><b>Logistics</b> and <b>Supply Chain</b>
+                                    Department of Amiens University
+                                    Hospital</li>
+                                <li id="li2act4"><b>Création</b> de tableaux Excel, publipostage pour les directeurs, flyers, fiches
+                                    (diptyque, triptyque), livrets, affiches, publications pour les réseaux sociaux
+                                    
+                                    </li>
+                                <li id="li3act4"><b>Rédaction</b> de communiqués de presse, mails presse, actualités </li>
+                                
+                            </ul>
+                        </p>
+                    </div> 
+                    
+                    <div class="about__img">
+                        <img id="imgact4" src="flambeau1.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== RANDONNES =====-->
+            <section class="skills section" id="Randonnees">
+                <h2 class="section-title">Randonnees</h2>
+
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 class="about__subtitle">Randonnes du GR20</h2>
+                        <p id="pran" class="about__text">Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer en raquettes cet hiver</p><br>
+                        <br>
+                        <a id="butran" class="button" href="" download>Mes Randonnées</a>
+                                      
+                    </div>   
+                    <div class="about__img">
+                        <img id="imgran" src="randonnee1.jpeg" alt="">
+                    </div>                                
+                </div>
+            </section>
+
+            <section class="skills section" id="transports">
+                <h2 class="section-title">Mes Transports</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Choissisez votre moyen de Transport</h2>
+                        <a id="sncfLink" href="#">
+                        <p class="skills__text"></p>
+                        <div class="skills__data" id="title">
+                            <div class="skills__names">
+                                <i class='bx bxs-train skills__icon' id="icon1"></i>
+                                <span class="skills__name" id="subtitle">Mes Horaires de Train</span>
+                            </div>
+                            <div class="skills__bar skills__html" id="bar">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage"> ✔ </span>
+                            </div>
+                        </div>
+                        </a>
+                        
+                        <a href="">
+                        <div class="skills__data" id='title2'>
+                            <div class="skills__names">
+                                <i class='bx bxs-bus skills__icon' id="icon2"></i>
+                                <span class="skills__name" id="subtitle2">Mes Horaires de Bus</span>
+                            </div>
+                            <div class="skills__bar skills__css" id="bar2">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"> ✔</span>
+                            </div>
+                        </div>
+                        </a>
+
+                        <a href="" id="uberLink">
+                        <div class="skills__data" id="title3">
+                            <div class="skills__names">
+                                <i class='bx bxs-taxi skills__icon' id="icon3"></i>
+                                <span class="skills__name" id="subtitle3">Planifier un trajet UBER</span>
+                            </div>
+                            <div class="skills__bar skills__js" id="bar3">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage"> ✔ </span>
+                            </div>
+                        </div>
+                        </a>
+
+                       
+                    </div>
+                    
+                    <div>              
+                        <img id="imgtran" src="transport2.jpeg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="about section " id="notice">
+                <h2 class="section-title">Notice</h2>
+
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 class="about__subtitle">Télécharger la Notice</h2>
+                        <p class="about__text">Ci-dessous vous pourrez télécharger la Notice d'utilisation de la Serrure. Cliquez sur le boutton ci-dessous pour la télécharger 👇</p><br>
+                        <br>
+                        <a class="button" href="NOTICE.jpg" download>Télécharger</a>
+                                      
+                    </div>   
+                    <div class="about__img">
+                        <img src="NOTICE.jpg" alt="">
+                    </div>                                
+                </div>
+            </section>
+
+
+            <!--===== COMMERCES =====-->
+            <section class="work section" id="commerces">
+                <h2 class="section-title">Commerces</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="#" class="work__img">
+                        <img src="sherpa.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="assets/img/immo_2.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="assets/img/analysus.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="assets/img/laredoute.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="assets/img/illicado.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img src="assets/img/promod.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <section class="about section " id="photos">
+                <h2 class="section-title">Photos</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="#" class="work__img">
+                        <img id="photo1" src="sherpa.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img id="photo2" src="assets/img/immo_2.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img id="photo3" src="assets/img/analysus.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img id="photo4" src="assets/img/laredoute.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img  id="photo5" src="assets/img/illicado.png" alt="">
+                    </a>
+                    <a href="#" class="work__img">
+                        <img  id="photo6" src="assets/img/promod.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            
+
+            <!--===== CONTACT =====
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="mailto:c.bocquetpro@gmail.com" method="GET" class="contact__form">
+                        <input type="text" placeholder="Nom" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Envoyer" class="contact__button button">
+                    </form>
+                </div>
+            </section>-->
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Le Grand Dou</p>
+            <div class="footer__social">
+                
+                <a href="#" class="footer__icon"><i class='bx bxl-airbnb' ></i></a>
+                
+            </div>
+            <div class="footer__social">
+                <h4>bocquet.daniel@free.fr</h4><h4>+33 6 30 06 20 16</h4>
+            </div>
+            <p class="footer__copy">&#169; Le Grand Dou. All rigths reserved</p>
+        </footer>
+
+
+        <script>
+
+            // Uber
+        const uberPickupAddress = "1 Rue de Rivoli, 75001 Paris, France";
+        const uberLink = document.getElementById("uberLink");
+        uberLink.href = `https://m.uber.com/ul/?action=setPickup&pickup[formatted_address]=${encodeURIComponent(uberPickupAddress)}`;
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // SNCF
+    const sncfDepartureStation = "Paris Gare de Lyon";
+    const sncfLink = document.getElementById("sncfLink");
+    
+    // Construire l'URL avec le paramètre encodé
+    const baseURL = "https://www.sncf-connect.com/app/catalogue/search/result";
+    const params = new URLSearchParams({
+        departure: sncfDepartureStation
+    });
+    
+    // Mettre à jour le lien avec l'URL construite
+    sncfLink.href = `${baseURL}?${params.toString()}`;
+});
+
+
+            // OnHover Titre 1
+            document.addEventListener('DOMContentLoaded',(event)=>{
+                const span = document.getElementById('title');
+                const sub = document.getElementById('subtitle');
+                const bar = document.getElementById('bar');
+                const icon = document.getElementById('icon1'); 
+
+                span.addEventListener('mouseover', function(){
+                        sub.textContent = 'Réservez dès Maintenant';
+                        bar.style.backgroundColor = "#01B708";
+                        icon.style.color = "#01B708";
+                });
+
+                span.addEventListener('mouseout',function(){
+                        sub.textContent = 'Mes Horaires de Train';
+                        bar.style.backgroundColor = "var(--first-color)";
+                        icon.style.color = "var(--first-color)";
+                });
+            });
+
+            // OnHover Titre 2
+            document.addEventListener('DOMContentLoaded',(event)=>{
+                const span = document.getElementById('title2');
+                const sub = document.getElementById('subtitle2');
+                const bar = document.getElementById('bar2');
+                const icon = document.getElementById('icon2'); 
+
+                span.addEventListener('mouseover', function(){
+                    sub.textContent = 'Réservez dès Maintenant';
+                    bar.style.backgroundColor = "#01B708";
+                    icon.style.color = "#01B708";
+                });
+
+                span.addEventListener('mouseout',function(){
+                    sub.textContent = 'Mes Horaires de Bus';
+                    bar.style.backgroundColor = "var(--first-color)";
+                    icon.style.color = "var(--first-color)";
+                });
+            });
+
+            // OnHover Titre 3
+            document.addEventListener('DOMContentLoaded',(event)=>{
+                const span = document.getElementById('title3');
+                const sub = document.getElementById('subtitle3');
+                const bar = document.getElementById('bar3');
+                const icon = document.getElementById('icon3'); 
+
+                span.addEventListener('mouseover', function(){
+                    sub.textContent = 'Réservez dès Maintenant';
+                    bar.style.backgroundColor = "#01B708";
+                    icon.style.color = "#01B708";
+                });
+
+                span.addEventListener('mouseout',function(){
+                    sub.textContent = 'Planifier un UBER';
+                    bar.style.backgroundColor = "var(--first-color)";
+                    icon.style.color = "var(--first-color)";
+                });
+            });
+
+            // OnHover Titre 4
+            document.addEventListener('DOMContentLoaded',(event)=>{
+                const span = document.getElementById('title4');
+                const sub = document.getElementById('subtitle4');
+                const bar = document.getElementById('bar4');
+                const icon = document.getElementById('icon4'); 
+
+                span.addEventListener('mouseover', function(){
+                    sub.textContent = 'CAGR/PER/ROE/ROIC/Margin/Liquidity/Yield';
+                    bar.style.backgroundColor = "#01B708";
+                    icon.style.color = "#01B708";
+                });
+
+                span.addEventListener('mouseout',function(){
+                    sub.textContent = 'Financial Fundamental Analysis';
+                    bar.style.backgroundColor = "var(--first-color)";
+                    icon.style.color = "var(--first-color)";
+                });
+            });
+
+
+
+
+            // ETE
+
+            document.addEventListener('DOMContentLoaded', function() {
+                // Définir les dates de début et de fin pour les saisons
+                    const summerStart = new Date(Date.UTC(new Date().getFullYear(), 9, 1)); // 1er avril
+                    const summerEnd = new Date(Date.UTC(new Date().getFullYear(), 8, 30));  // 30 septembre
+                    const currentDate = new Date();
+
+                // Obtenir l'élément de l'image
+                    const imgchalet = document.getElementById('imgchalet');
+                    const imgact1 = document.getElementById('imgact1');
+                    const imgact2 = document.getElementById('imgact2');
+                    const imgact3 = document.getElementById('imgact3');
+                    const imgact4 = document.getElementById('imgact4');
+                    const titact1 = document.getElementById('titact1');
+                    const titact2 = document.getElementById('titact2');
+                    const titact3 = document.getElementById('titact3');
+                    const titact4 = document.getElementById('titact4');
+                    const li1act1 = document.getElementById('li1act1');
+                    const li2act1 = document.getElementById('li2act1');
+                    const li3act1 = document.getElementById('li3act1');
+                    const li1act2 = document.getElementById('li1act2');
+                    const li2act2 = document.getElementById('li2act2');
+                    const li3act2 = document.getElementById('li3act2');
+                    const li1act3 = document.getElementById('li1act3');
+                    const li2act3 = document.getElementById('li2act3');
+                    const li3act3 = document.getElementById('li3act3');
+                    const li4act3 = document.getElementById('li4act3');
+                    const li1act4 = document.getElementById('li1act4');
+                    const li2act4 = document.getElementById('li2act4');
+                    const li3act4 = document.getElementById('li3act4');
+                    const pran = document.getElementById('pran');
+                    const imgran = document.getElementById('imgran');
+                    const butran = document.getElementById('butran');
+                    const imgtran= document.getElementById('imgtran');
+                    const photo1 = document.getElementById('photo1');
+                    const photo2 = document.getElementById('photo2');
+                    const photo3 = document.getElementById('photo3');
+                    const photo4 = document.getElementById('photo4');
+                    const photo5 = document.getElementById('photo5');
+                    const photo6 = document.getElementById('photo6');
+                    
+
+                // Vérifier si la date actuelle est dans la plage estivale
+                    if (currentDate >= summerStart && currentDate <= summerEnd) {
+                // Si c'est l'été, afficher la photo d'été
+                    imgchalet.setAttribute('xlink:href', 'chaletete.png');                    imgact1.src = "chaletete.png";
+                    imgact2.src = "chaletete.png";
+                    imgact3.src = "chaletete.png";
+                    imgact4.src = "chaletete.png";
+                    titact1.textContent = "VTT";
+                    titact2.textContent = "Tyroliennes";
+                    titact3.textContent = "Trottinettes";
+                    titact4.textContent = "Piscine";
+                    li1act1.textContent = "#";
+                    li2act1.textContent = "#";
+                    li3act1.textContent = "#";
+                    li1act2.textContent = "#";
+                    li2act2.textContent = "#";
+                    li3act2.textContent = "#";
+                    li1act3.textContent = "#";
+                    li2act3.textContent = "#";
+                    li3act3.textContent = "#";
+                    li4act3.textContent = "#";
+                    li1act4.textContent = "#";
+                    li2act4.textContent = "#";
+                    li3act4.textContent = "#";
+                    pran.innerHTML = "Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer sous le soleil d'été";
+                    imgran.src = "chaletete.png";
+                    butran.href = "";
+                    imgtran.src = "chaletete.png";
+                    photo1.src = "chaletete.png";
+                    photo2.src = "chaletete.png";
+                    photo3.src = "chaletete.png";
+                    photo4.src = "chaletete.png";
+                    photo5.src = "chaletete.png";
+                    photo6.src = "chaletete.png";
+                    document.documentElement.style.setProperty('--first-color', '#FFD700');
+                    } else {
+                }
+                });
+
+
+        </script>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="main.js"></script>
+    </body>
 </html>
