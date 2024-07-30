@@ -289,6 +289,33 @@ img {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
 }
 
+.about__img .map {
+    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+    width: 300px;
+  border-radius: .5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.5s ease;
+}
+
+.about__img:hover .map {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.about__img:hover img {
+    opacity: 0;
+}
+
+
+
+
+
 .about__text{
   font-size: 14px;
 }
