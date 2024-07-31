@@ -23,7 +23,7 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
                         <li class="nav__item"><a href="#activites" class="nav__link">Activités</a></li>
-                        <li class="nav__item"><a href="#randonnees" class="nav__link">Randonnées</a></li>
+                        <li class="nav__item"><a href="#randonnees" class="nav__link">Randonnées & Pistes</a></li>
                         <li class="nav__item"><a href="#transports" class="nav__link">Mes Transports</a></li>
                         <li class="nav__item"><a href="#notice" class="nav__link">Notice</a></li>
                         <li class="nav__item"><a href="#commerces" class="nav__link">Commerces</a></li>
@@ -309,17 +309,18 @@
             </section>
 
             <!--===== RANDONNES =====-->
-            <section class="skills section" id="Randonnees">
-                <h2 class="section-title">Randonnées</h2>
+            <section class="skills section" id="randonnees">
+                <h2 class="section-title">Randonnées & Pistes</h2>
 
                 <div class="about__container bd-grid">
                     
                     
                     <div>
-                        <h2 class="about__subtitle">Randonnées du GR20</h2>
-                        <p id="pran" class="about__text">Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer en raquettes cet hiver</p><br>
+                        <h2 id="hran" class="about__subtitle">Randonnées et Pistes de Ski</h2>
+                        <p id="pran" class="about__text">Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer en raquettes cet hiver. Ainsi que toutes les <b>Pistes de Ski</b> à dévaler</p><br>
                         <br>
-                        <a id="butran" class="button" href="" download>Mes Randonnées</a>
+                        <a id="butran" class="button" target="_blank" href="" download>Mes Randonnées</a>
+                        <a id="butran2" class="button" target="_blank" href="" download>Les Pistes de Ski</a>
                                       
                     </div>   
                     <div class="about__img0">
@@ -336,7 +337,7 @@
                         <h2 class="skills__subtitle">Choissisez votre moyen de Transport</h2>
                         
                         <p class="skills__text"></p>
-                        <a id="sncfLink" href="#">
+                        <a id="sncfLink" href="#" target="_blank">
                         <div class="skills__data" id="title">
                             <div class="skills__names">
                                 <i class='bx bxs-train skills__icon' id="icon1"></i>
@@ -351,7 +352,7 @@
                         </div>
                         </a>
                         
-                        <a href="">
+                        <a id="busLink" href="" target="_blank">
                         <div class="skills__data" id='title2'>
                             <div class="skills__names">
                                 <i class='bx bxs-bus skills__icon' id="icon2"></i>
@@ -366,7 +367,7 @@
                         </div>
                         </a>
 
-                        <a href="" id="uberLink">
+                        <a href="" id="uberLink" target="_blank">
                         <div class="skills__data" id="title3">
                             <div class="skills__names">
                                 <i class='bx bxs-taxi skills__icon' id="icon3"></i>
@@ -381,7 +382,7 @@
                         </div>
                         </a>
 
-                        <a href="" id="bbcLink">
+                        <a href="" id="bbcLink" target="_blank">
                             <div class="skills__data" id="title4">
                                 <div class="skills__names">
                                     <i class='bx bxs-car-garage skills__icon' id="icon4"></i>
@@ -418,7 +419,7 @@
                         <h2 class="about__subtitle">Télécharger la Notice</h2>
                         <p class="about__text">Ci-dessous vous pourrez télécharger la Notice d'utilisation de la Serrure. Cliquez sur le boutton ci-dessous pour la télécharger 👇</p><br>
                         <br>
-                        <a class="button" href="NOTICE.jpg" download>Télécharger</a>
+                        <a class="button" href="NOTICE.jpg" target="_blank">Agrandir l'image</a>
                                       
                     </div>   
                     <div class="about__img0">
@@ -525,6 +526,27 @@
         const blablacarArrivalCity = "";
         const blablacarLink = document.getElementById("bbcLink");
         blablacarLink.href = `https://www.blablacar.fr/ride-sharing/${encodeURIComponent(blablacarDepartureCity)}-${encodeURIComponent(blablacarArrivalCity)}`;
+
+
+        // BUS
+
+        const busLink = document.getElementById("busLink");
+        busLink.href = `https://vente.cars-region-savoie.fr/Reservation`;
+
+        function fillDepartureField() {
+        const departureStation = "Meribel";  // Remplacez "Paris" par le lieu de départ souhaité
+        const departureField = document.querySelector('input[name="idGareDepart"]'); // Assurez-vous que le sélecteur correspond au champ réel
+
+        if (departureField) {
+            departureField.value = departureStation;
+        } else {
+            console.log("Le champ de départ n'a pas été trouvé.");
+        }
+        }
+
+    // Appeler la fonction après le chargement de la page
+    window.addEventListener('load', fillDepartureField);
+
 
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -670,6 +692,8 @@
                     const pran = document.getElementById('pran');
                     const imgran = document.getElementById('imgran');
                     const butran = document.getElementById('butran');
+                    const butran2 = document.getElementById('butran2');
+                    const hran = document.getElementById('hran');
                     const imgtran= document.getElementById('imgtran');
                     const photo1 = document.getElementById('photo1');
                     const photo2 = document.getElementById('photo2');
@@ -686,10 +710,10 @@
                     imgact2.src = "chaletete.png";
                     imgact3.src = "chaletete.png";
                     imgact4.src = "chaletete.png";
-                    titact1.textContent = "VTT";
-                    titact2.textContent = "Tyroliennes";
-                    titact3.textContent = "Trottinettes";
-                    titact4.textContent = "Piscine";
+                    titact1.textContent = "VTT & Trottinettes";
+                    titact2.textContent = "Canyoning";
+                    titact3.textContent = "Tennis";
+                    titact4.textContent = "Golf";
                     li1act1.textContent = "#";
                     li2act1.textContent = "#";
                     li3act1.textContent = "#";
@@ -713,9 +737,12 @@
                     li2act8.textContent = "#";
                     li1act9.textContent = "#";
                     li2act9.textContent = "#";
-                    pran.innerHTML = "Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer sous le soleil d'été";
+                    pran.innerHTML = "Retrouvez toutes les <b>Randonnées</b> les plus <b>Magiques</b> à pratiquer sous le soleil d'été. Ainsi que les meilleures pistes de <b>VTT</b>";
                     imgran.src = "chaletete.png";
-                    butran.href = "";
+                    butran.href = "https://www.calameo.com/read/00699522018070dfe0d4b";
+                    butran2.href = "https://www.calameo.com/read/00699522050e52871fd75";
+                    butran2.textContent = "Pistes de VTT";
+                    hran.textContent = "Randonnées et Pistes de VTT";
                     imgtran.src = "chaletete.png";
                     photo1.src = "chaletete.png";
                     photo2.src = "chaletete.png";
